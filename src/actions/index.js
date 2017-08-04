@@ -17,15 +17,6 @@ export function selectAccount(accountId) {
 }
 
 
-
-/************************************
-
-You will need to create a selectAccount
-action creator here, it will take a type, and
-payload: accountId
-
-************************************/
-
 export function withdrawFunds(amount) {
   return {
     type: WITHDRAW_FUNDS,

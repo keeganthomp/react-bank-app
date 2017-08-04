@@ -13,7 +13,7 @@ class UserDetail extends Component {
     }
     //get user id from params of URL
     const { id } = this.props.match.params;
-    console.log("propsss:", this.props);
+    console.log("propsss::::::::", this.props);
     //map over the accounts for the user to create links to them.
     let accounts = this.props.user.accounts.map(account => {
       //creating a Link with the account type for
@@ -69,8 +69,7 @@ function mapStateToProps(state) {
 function mapDispatchToProps(dispatch) {
   return bindActionCreators({
     selectAccount: selectAccount,
-    selectUser: selectUser
-  });
+  }, dispatch);
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(UserDetail);
