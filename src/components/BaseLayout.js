@@ -6,11 +6,11 @@ import '../styles/App.css';
 
 function BaseLayout ({children}){
     return (
-        <div>
-            <div>
-                <NavLink activeStyle={{ color: 'pink' }} to="/">Home</NavLink>
-                <NavLink activeStyle={{ color: 'pink' }} to="/users">Users</NavLink>
-                <NavLink activeStyle={{ color: 'pink' }} to="/users">Nav</NavLink>
+        <div className="mainPage">
+            <div className="navigation">
+                <NavLink className="navItem" activeStyle={{ color: 'pink' }} to="/">Home</NavLink >
+                <NavLink className="navItem" activeStyle={{ color: 'pink' }} to="/users">Users</NavLink>
+                <NavLink className="navItem" activeStyle={{ color: 'pink' }} to="/users">Nav</NavLink>
             </div>
             {children}
         </div>

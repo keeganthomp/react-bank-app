@@ -22,3 +22,17 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+.mainPage {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.navItem {
+  margin: 20px;
+  text-transform: uppercase
+}
+
+.navigation {
+  margin: 0 auto;
+}
