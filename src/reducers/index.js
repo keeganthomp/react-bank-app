@@ -14,19 +14,20 @@ const initialState = {
 };
 
 const reducer = function(state = initialState, action) {
+  let newState = _.cloneDeep(state);
   switch (action.type) {
     case USER_SELECTED:
-      var newState = _.cloneDeep(state);
-      newState.selectedUser = action.payload;
+      let userId = action.payload;
+      newState.selectedUser = newState.users.find(el => {
+        return (el._id = userId);
+      });
       return newState;
 
     case ACCOUNT_SELECTED:
-      var newState = _.cloneDeep(state);
       newState.selectedAccount = action.payload;
       return newState;
 
     case WITHDRAW_FUNDS:
-      var newState = _.cloneDeep(state);
       const userIdx = newState.users.findIndex(
         user => user._id === newState.selectedUser
       );

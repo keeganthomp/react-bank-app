@@ -38,9 +38,9 @@ ReactDOM.render(
       <BaseLayout>
         <Switch>
           <Route exact path="/" component={App} />
-          <Route path="/users/:id/:accountID" component={AccountDetail} />
-          <Route path="/users/:id" component={UserDetail} />
-          <Route path="/users" component={UserList} />
+          <Route exact path="/users/:id/:accountID" component={AccountDetail} />
+          <Route exact path="/users/:id" component={UserDetail} />
+          <Route exact path="/users" component={UserList} />
         </Switch>
       </BaseLayout>
     </BrowserRouter>
