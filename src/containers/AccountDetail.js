@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import { connect } from "react-redux";
 import { bindActionCreators } from "redux";
 import { Link } from "react-router-dom";
+import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from "reactstrap";
+import Transaction from "./Transaction";
 
 class AccountDetails extends Component {
   render() {
@@ -26,6 +28,7 @@ class AccountDetails extends Component {
               </div>
             </div>
           </div>
+          <Transaction />
           <Link className="btn btn-primary" to="/users">
             Back to List of Users
           </Link>

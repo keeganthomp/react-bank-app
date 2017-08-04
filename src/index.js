@@ -37,10 +37,10 @@ ReactDOM.render(
     <BrowserRouter>
       <BaseLayout>
         <Switch>
-          <Route exact path="/" component={App} />
           <Route exact path="/users/:id/:accountID" component={AccountDetail} />
           <Route exact path="/users/:id" component={UserDetail} />
           <Route exact path="/users" component={UserList} />
+          <Route exact path="/" component={App} />
         </Switch>
       </BaseLayout>
     </BrowserRouter>

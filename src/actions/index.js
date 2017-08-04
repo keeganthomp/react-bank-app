@@ -20,7 +20,6 @@ export function selectAccount(accountId) {
 export function withdrawFunds(amount) {
   return {
     type: WITHDRAW_FUNDS,
-    //need to change the amount to an integer value
     payload: parseInt(amount, 10)
   }
 }
